@@ -1,0 +1,1883 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>750</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="corewidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>25</x>
+      <y>15</y>
+      <width>800</width>
+      <height>650</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>800</width>
+      <height>650</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>800</width>
+      <height>650</height>
+     </size>
+    </property>
+    <widget class="trap" name="trap1">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>109</y>
+       <width>70</width>
+       <height>70</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Panel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <property name="lineWidth">
+      <number>5</number>
+     </property>
+     <property name="text">
+      <string>陷阱1</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="textInteractionFlags">
+      <set>Qt::LinksAccessibleByMouse</set>
+     </property>
+    </widget>
+    <widget class="trap" name="trap2">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>0</y>
+       <width>70</width>
+       <height>70</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Panel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <property name="lineWidth">
+      <number>5</number>
+     </property>
+     <property name="text">
+      <string>陷阱2</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="trap" name="trap3">
+     <property name="geometry">
+      <rect>
+       <x>109</x>
+       <y>279</y>
+       <width>70</width>
+       <height>70</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Panel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <property name="lineWidth">
+      <number>5</number>
+     </property>
+     <property name="text">
+      <string>陷阱3</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="trap" name="trap4">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>450</y>
+       <width>40</width>
+       <height>160</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Panel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <property name="lineWidth">
+      <number>5</number>
+     </property>
+     <property name="midLineWidth">
+      <number>0</number>
+     </property>
+     <property name="text">
+      <string>陷阱4</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="destination" name="dest">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>590</y>
+       <width>40</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>40</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>40</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Panel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <property name="lineWidth">
+      <number>5</number>
+     </property>
+     <property name="text">
+      <string>终点</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="board" name="board1">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>-1</y>
+       <width>40</width>
+       <height>651</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Panel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <property name="lineWidth">
+      <number>3</number>
+     </property>
+     <property name="text">
+      <string>挡板1</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="board" name="board3">
+     <property name="geometry">
+      <rect>
+       <x>530</x>
+       <y>80</y>
+       <width>40</width>
+       <height>570</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Panel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <property name="lineWidth">
+      <number>3</number>
+     </property>
+     <property name="text">
+      <string>挡板3</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="board" name="board2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>180</y>
+       <width>150</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Panel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <property name="lineWidth">
+      <number>3</number>
+     </property>
+     <property name="text">
+      <string>挡板2</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="bouncingboard" name="B_board1">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>410</y>
+       <width>120</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Panel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <property name="lineWidth">
+      <number>3</number>
+     </property>
+     <property name="text">
+      <string>弹板1</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="bouncingboard" name="B_board2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>609</y>
+       <width>180</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Panel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <property name="lineWidth">
+      <number>3</number>
+     </property>
+     <property name="text">
+      <string>弹板2</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="bouncingboard" name="B_board3">
+     <property name="geometry">
+      <rect>
+       <x>139</x>
+       <y>519</y>
+       <width>40</width>
+       <height>90</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Panel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <property name="lineWidth">
+      <number>3</number>
+     </property>
+     <property name="text">
+      <string>弹板3</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="bouncingboard" name="B_board4">
+     <property name="geometry">
+      <rect>
+       <x>660</x>
+       <y>450</y>
+       <width>50</width>
+       <height>130</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Panel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <property name="lineWidth">
+      <number>3</number>
+     </property>
+     <property name="text">
+      <string>弹板4</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="vortex" name="vortex1">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>270</y>
+       <width>90</width>
+       <height>90</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Panel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <property name="lineWidth">
+      <number>5</number>
+     </property>
+     <property name="text">
+      <string>漩涡1</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="vortex" name="vortex2">
+     <property name="geometry">
+      <rect>
+       <x>710</x>
+       <y>470</y>
+       <width>90</width>
+       <height>90</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Panel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <property name="lineWidth">
+      <number>5</number>
+     </property>
+     <property name="text">
+      <string>漩涡2</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="vortex" name="vortex3">
+     <property name="geometry">
+      <rect>
+       <x>570</x>
+       <y>290</y>
+       <width>90</width>
+       <height>90</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Panel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <property name="lineWidth">
+      <number>5</number>
+     </property>
+     <property name="text">
+      <string>漩涡3</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="vortex" name="vortex4">
+     <property name="geometry">
+      <rect>
+       <x>710</x>
+       <y>110</y>
+       <width>90</width>
+       <height>90</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Panel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <property name="lineWidth">
+      <number>5</number>
+     </property>
+     <property name="text">
+      <string>漩涡4</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="portal_a" name="portal_a1">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>500</y>
+       <width>40</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="lineWidth">
+      <number>1</number>
+     </property>
+     <property name="midLineWidth">
+      <number>0</number>
+     </property>
+     <property name="text">
+      <string>a1&lt;</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="portal_b" name="portal_b1">
+     <property name="geometry">
+      <rect>
+       <x>630</x>
+       <y>600</y>
+       <width>110</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="text">
+      <string>b1^</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="board" name="board4">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>430</y>
+       <width>220</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Panel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <property name="lineWidth">
+      <number>3</number>
+     </property>
+     <property name="text">
+      <string>挡板4</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="bouncingboard" name="B_board5">
+     <property name="geometry">
+      <rect>
+       <x>660</x>
+       <y>270</y>
+       <width>50</width>
+       <height>130</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Panel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <property name="lineWidth">
+      <number>3</number>
+     </property>
+     <property name="text">
+      <string>弹板5</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="trap" name="trap5">
+     <property name="geometry">
+      <rect>
+       <x>570</x>
+       <y>470</y>
+       <width>90</width>
+       <height>90</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Panel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <property name="lineWidth">
+      <number>5</number>
+     </property>
+     <property name="text">
+      <string>陷阱5</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="trap" name="trap6">
+     <property name="geometry">
+      <rect>
+       <x>710</x>
+       <y>290</y>
+       <width>90</width>
+       <height>90</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Panel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <property name="lineWidth">
+      <number>5</number>
+     </property>
+     <property name="text">
+      <string>陷阱6</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="portal_a" name="portal_a2">
+     <property name="geometry">
+      <rect>
+       <x>630</x>
+       <y>0</y>
+       <width>110</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="text">
+      <string>a2^</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="bouncingboard" name="B_board6">
+     <property name="geometry">
+      <rect>
+       <x>660</x>
+       <y>90</y>
+       <width>50</width>
+       <height>130</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Panel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <property name="lineWidth">
+      <number>3</number>
+     </property>
+     <property name="text">
+      <string>弹板6</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="trap" name="trap7">
+     <property name="geometry">
+      <rect>
+       <x>570</x>
+       <y>110</y>
+       <width>90</width>
+       <height>90</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Panel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <property name="lineWidth">
+      <number>5</number>
+     </property>
+     <property name="text">
+      <string>陷阱7</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="trap" name="trap8">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>110</y>
+       <width>310</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Panel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <property name="lineWidth">
+      <number>5</number>
+     </property>
+     <property name="text">
+      <string>陷阱8</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="trap" name="trap9">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>320</y>
+       <width>310</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Panel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <property name="lineWidth">
+      <number>5</number>
+     </property>
+     <property name="text">
+      <string>陷阱9</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="trap" name="trap10">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>430</y>
+       <width>40</width>
+       <height>110</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Panel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <property name="lineWidth">
+      <number>5</number>
+     </property>
+     <property name="text">
+      <string>陷阱10</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="trap" name="trap11">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>460</y>
+       <width>40</width>
+       <height>190</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Panel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <property name="lineWidth">
+      <number>5</number>
+     </property>
+     <property name="text">
+      <string>陷阱11</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="portal_a" name="portal_a3">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>10</y>
+       <width>50</width>
+       <height>90</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="text">
+      <string>a3&lt;</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="portal_b" name="portal_b3">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>150</y>
+       <width>70</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="text">
+      <string>b3v</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="portal_a" name="portal_a4">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>280</y>
+       <width>70</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="text">
+      <string>a4v</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="portal_a" name="portal_a5">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>150</y>
+       <width>75</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="text">
+      <string>a5^</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="portal_b" name="portal_b4">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>280</y>
+       <width>75</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="text">
+      <string>b4^</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="portal_b" name="portal_b5">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>150</y>
+       <width>70</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="text">
+      <string>b5v</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="portal_a" name="portal_a6">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>280</y>
+       <width>70</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="text">
+      <string>a6v</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="vortex" name="vortex5">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>0</y>
+       <width>110</width>
+       <height>110</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Panel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <property name="lineWidth">
+      <number>5</number>
+     </property>
+     <property name="text">
+      <string>漩涡5</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="vortex" name="vortex8">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>200</y>
+       <width>70</width>
+       <height>70</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Panel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <property name="lineWidth">
+      <number>5</number>
+     </property>
+     <property name="text">
+      <string>漩涡8</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="vortex" name="vortex7">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>200</y>
+       <width>70</width>
+       <height>70</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Panel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <property name="lineWidth">
+      <number>5</number>
+     </property>
+     <property name="text">
+      <string>漩涡7</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="vortex" name="vortex6">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>200</y>
+       <width>70</width>
+       <height>70</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Panel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <property name="lineWidth">
+      <number>5</number>
+     </property>
+     <property name="text">
+      <string>漩涡6</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="board" name="board5">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>540</y>
+       <width>210</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Panel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <property name="lineWidth">
+      <number>3</number>
+     </property>
+     <property name="text">
+      <string>挡板5</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="trap" name="trap12">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>570</y>
+       <width>40</width>
+       <height>80</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Panel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <property name="lineWidth">
+      <number>5</number>
+     </property>
+     <property name="text">
+      <string>陷阱12</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="portal_b" name="portal_b6">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>360</y>
+       <width>40</width>
+       <height>70</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="text">
+      <string>b6&gt;</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="portal_a" name="portal_a7">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>360</y>
+       <width>40</width>
+       <height>70</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="text">
+      <string>a7&gt;</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="vortex" name="vortex9">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>460</y>
+       <width>80</width>
+       <height>80</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Panel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <property name="lineWidth">
+      <number>5</number>
+     </property>
+     <property name="text">
+      <string>漩涡9</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="bouncingboard" name="B_board7">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>150</y>
+       <width>30</width>
+       <height>170</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Panel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <property name="lineWidth">
+      <number>3</number>
+     </property>
+     <property name="text">
+      <string>弹板7</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="bouncingboard" name="B_board8">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>150</y>
+       <width>31</width>
+       <height>171</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Panel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <property name="lineWidth">
+      <number>3</number>
+     </property>
+     <property name="text">
+      <string>弹板8</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="recorddot" name="rec1">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>410</y>
+       <width>40</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>14</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Panel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <property name="lineWidth">
+      <number>3</number>
+     </property>
+     <property name="text">
+      <string>R1</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::PlainText</enum>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="recorddot" name="rec2">
+     <property name="geometry">
+      <rect>
+       <x>570</x>
+       <y>610</y>
+       <width>40</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>14</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Panel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <property name="lineWidth">
+      <number>3</number>
+     </property>
+     <property name="text">
+      <string>R2</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="recorddot" name="rec3">
+     <property name="geometry">
+      <rect>
+       <x>570</x>
+       <y>240</y>
+       <width>40</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>14</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Panel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <property name="lineWidth">
+      <number>3</number>
+     </property>
+     <property name="text">
+      <string>R3</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="recorddot" name="rec4">
+     <property name="geometry">
+      <rect>
+       <x>530</x>
+       <y>40</y>
+       <width>40</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>14</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Panel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <property name="lineWidth">
+      <number>3</number>
+     </property>
+     <property name="text">
+      <string>R4</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="recorddot" name="rec5">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>500</y>
+       <width>40</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>14</pointsize>
+       <italic>false</italic>
+       <bold>true</bold>
+       <underline>false</underline>
+       <strikeout>false</strikeout>
+       <kerning>true</kerning>
+       <hintingpreference>PreferDefaultHinting</hintingpreference>
+      </font>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Panel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <property name="lineWidth">
+      <number>3</number>
+     </property>
+     <property name="text">
+      <string>R5</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="widget_slider_x" native="true">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>670</y>
+      <width>650</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="label_slider_x">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>24</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>30°</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Fixed</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>10</width>
+         <height>10</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QSlider" name="Slider_x">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>500</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="minimum">
+        <number>-30</number>
+       </property>
+       <property name="maximum">
+        <number>30</number>
+       </property>
+       <property name="pageStep">
+        <number>10</number>
+       </property>
+       <property name="sliderPosition">
+        <number>0</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="tickPosition">
+        <enum>QSlider::TicksAbove</enum>
+       </property>
+       <property name="tickInterval">
+        <number>0</number>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="widget_slider_y" native="true">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>20</y>
+      <width>80</width>
+      <height>650</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="label_slider_y">
+       <property name="minimumSize">
+        <size>
+         <width>70</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>24</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>30°</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSlider" name="Slider_y">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>500</height>
+        </size>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::RightToLeft</enum>
+       </property>
+       <property name="minimum">
+        <number>-30</number>
+       </property>
+       <property name="maximum">
+        <number>30</number>
+       </property>
+       <property name="sliderPosition">
+        <number>0</number>
+       </property>
+       <property name="tracking">
+        <bool>true</bool>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="invertedAppearance">
+        <bool>true</bool>
+       </property>
+       <property name="invertedControls">
+        <bool>false</bool>
+       </property>
+       <property name="tickPosition">
+        <enum>QSlider::TicksAbove</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Fixed</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>10</width>
+         <height>10</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="widget_2" native="true">
+    <property name="geometry">
+     <rect>
+      <x>890</x>
+      <y>110</y>
+      <width>90</width>
+      <height>500</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <spacer name="verticalSpacer_4">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pauseButton">
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>华文中宋</family>
+         <pointsize>17</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>暂停</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="verticalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="helpButton">
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>华文中宋</family>
+         <pointsize>17</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>帮助</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="verticalSpacer_3">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="quitButton">
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>华文中宋</family>
+         <pointsize>17</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>退出</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="verticalSpacer_5">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="mode3_flag">
+    <property name="geometry">
+     <rect>
+      <x>910</x>
+      <y>40</y>
+      <width>71</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>14</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Panel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string>0/5次</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::AutoText</enum>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1000</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>华文中宋</family>
+     <pointsize>14</pointsize>
+     <bold>false</bold>
+    </font>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="font">
+     <font>
+      <family>华文中宋</family>
+      <pointsize>12</pointsize>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="title">
+     <string>菜单</string>
+    </property>
+    <addaction name="actionpause"/>
+    <addaction name="actionretry"/>
+    <addaction name="separator"/>
+    <addaction name="actionquit"/>
+    <addaction name="separator"/>
+    <addaction name="actionhelp"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="font">
+     <font>
+      <family>华文中宋</family>
+      <pointsize>12</pointsize>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="title">
+     <string>单人模式</string>
+    </property>
+    <addaction name="actionmode1"/>
+    <addaction name="actionmode2"/>
+    <addaction name="actionmode3"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="font">
+     <font>
+      <family>华文中宋</family>
+      <pointsize>12</pointsize>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="title">
+     <string>普通版</string>
+    </property>
+    <addaction name="actionrecord1"/>
+    <addaction name="actionrecord2"/>
+    <addaction name="actionrecord3"/>
+    <addaction name="actionrecord4"/>
+    <addaction name="actionrecord5"/>
+    <addaction name="separator"/>
+    <addaction name="actioncracked_version"/>
+    <addaction name="actionnorm_version"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+  </widget>
+  <action name="actionquit">
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+  <action name="actionhelp">
+   <property name="text">
+    <string>帮助</string>
+   </property>
+  </action>
+  <action name="actionpause">
+   <property name="text">
+    <string>暂停</string>
+   </property>
+  </action>
+  <action name="actionmode1">
+   <property name="text">
+    <string>单人模式</string>
+   </property>
+  </action>
+  <action name="actionmode2">
+   <property name="text">
+    <string>双人模式</string>
+   </property>
+  </action>
+  <action name="actionmode3">
+   <property name="text">
+    <string>友尽模式</string>
+   </property>
+  </action>
+  <action name="actionrecord1">
+   <property name="text">
+    <string>存档点1</string>
+   </property>
+  </action>
+  <action name="actionrecord2">
+   <property name="text">
+    <string>存档点2</string>
+   </property>
+  </action>
+  <action name="actionrecord3">
+   <property name="text">
+    <string>存档点3</string>
+   </property>
+  </action>
+  <action name="actionrecord4">
+   <property name="text">
+    <string>存档点4</string>
+   </property>
+  </action>
+  <action name="actionrecord5">
+   <property name="text">
+    <string>存档点5</string>
+   </property>
+  </action>
+  <action name="actionretry">
+   <property name="text">
+    <string>重新开始</string>
+   </property>
+  </action>
+  <action name="actioncracked_version">
+   <property name="text">
+    <string>破解版</string>
+   </property>
+  </action>
+  <action name="actionnorm_version">
+   <property name="text">
+    <string>普通版</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>destination</class>
+   <extends>QLabel</extends>
+   <header location="global">destination.h</header>
+  </customwidget>
+  <customwidget>
+   <class>trap</class>
+   <extends>QLabel</extends>
+   <header location="global">trap.h</header>
+  </customwidget>
+  <customwidget>
+   <class>corewidget</class>
+   <extends>QWidget</extends>
+   <header location="global">corewidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>board</class>
+   <extends>QLabel</extends>
+   <header location="global">board.h</header>
+  </customwidget>
+  <customwidget>
+   <class>bouncingboard</class>
+   <extends>QLabel</extends>
+   <header location="global">bouncingboard.h</header>
+  </customwidget>
+  <customwidget>
+   <class>vortex</class>
+   <extends>QLabel</extends>
+   <header location="global">vortex.h</header>
+  </customwidget>
+  <customwidget>
+   <class>portal_a</class>
+   <extends>QLabel</extends>
+   <header location="global">portal_a.h</header>
+  </customwidget>
+  <customwidget>
+   <class>portal_b</class>
+   <extends>QLabel</extends>
+   <header location="global">portal_b.h</header>
+  </customwidget>
+  <customwidget>
+   <class>recorddot</class>
+   <extends>QLabel</extends>
+   <header location="global">recorddot.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
