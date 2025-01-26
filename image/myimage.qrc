@@ -1,0 +1,31 @@
+<RCC>
+    <qresource prefix="/">
+        <file>ball.png</file>
+        <file>board.png</file>
+        <file>bouncingboard.png</file>
+        <file>flag.png</file>
+        <file>trap.png</file>
+        <file>vortex.png</file>
+        <file>vortex_danger.png</file>
+        <file>vortex_safe.png</file>
+        <file>inportal0.png</file>
+        <file>inportal1.png</file>
+        <file>inportal2.png</file>
+        <file>inportal3.png</file>
+        <file>outportal0.png</file>
+        <file>outportal1.png</file>
+        <file>outportal3.png</file>
+        <file>outportal2.png</file>
+        <file>notice.png</file>
+        <file>pause.png</file>
+        <file>mainbackground1.png</file>
+        <file>mainbackground2.png</file>
+        <file>victory.png</file>
+        <file>defeat.png</file>
+        <file>mainbackground3.png</file>
+        <file>defeat_back.png</file>
+        <file>victory_back.png</file>
+        <file>pause_back.png</file>
+        <file>rec_green.png</file>
+    </qresource>
+</RCC>
